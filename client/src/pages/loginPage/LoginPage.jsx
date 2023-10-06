@@ -13,7 +13,7 @@ const LoginPage = () => {
 
     const login = async(evt) => {
         evt.preventDefault()
-        const response = await fetch('http://localhost:8080/login', {
+        const response = await fetch('http://blogify-api-dnyo.onrender.com/login', {
             method: 'POST',
             body: JSON.stringify({username, password}),
             headers: {'content-type': 'application/json'},

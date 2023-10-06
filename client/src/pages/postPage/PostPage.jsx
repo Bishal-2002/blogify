@@ -16,7 +16,7 @@ const PostPage = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:8080/post/${id}`)
+        fetch(`http://blogify-api-dnyo.onrender.com/post/${id}`)
             .then((response) => {
                 if(!response.ok) { setRedirectHome(true) }
                 else return response.json()
@@ -27,7 +27,7 @@ const PostPage = () => {
     }, [])
 
     const DeletePost = () => {
-        fetch(`http://localhost:8080/post/${id}`, { method: 'DELETE' })
+        fetch(`http://blogify-api-dnyo.onrender.com/post/${id}`, { method: 'DELETE' })
             .then((response) => {
                 if(response.ok)  setRedirectHome(true)
             })

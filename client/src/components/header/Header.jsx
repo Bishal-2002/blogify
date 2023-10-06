@@ -9,7 +9,7 @@ const Header = () => {
     const {userInfo, setUserInfo} = useContext(UserContext)
     
     useEffect(() => {
-        fetch('http://localhost:8080/profile', {credentials: 'include'})
+        fetch('http://blogify-api-dnyo.onrender.com/profile', {credentials: 'include'})
             .then((response) => {
                 if(!response.ok) { setUserInfo(null) }
                 else return response.json()
@@ -20,7 +20,7 @@ const Header = () => {
     }, [])
 
     const logout = async() => {
-        const response = fetch('http://localhost:8080/logout', {
+        const response = fetch('http://blogify-api-dnyo.onrender.com/logout', {
             method: 'POST',
             credentials: 'include'
         })
