@@ -7,7 +7,7 @@ import './style.scss'
 const Home = () => {
     const [posts, setPosts] = useState([])
     useEffect(() => {
-        fetch('http://blogify-api-dnyo.onrender.com/post')
+        fetch('https://blogify-api-dnyo.onrender.com/post')
             .then(response => response.json())
             .then(posts => {
                 setPosts(posts)

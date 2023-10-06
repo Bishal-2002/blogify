@@ -31,7 +31,7 @@ const CreatePost = () => {
         
         evt.preventDefault()
         
-        const response = await fetch('http://blogify-api-dnyo.onrender.com/post', {
+        const response = await fetch('https://blogify-api-dnyo.onrender.com/post', {
             method: 'POST',
             body: formData,
             credentials: 'include'

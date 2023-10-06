@@ -18,7 +18,7 @@ const EditPost = () => {
     const [oldImage, setOldImage] = useState(null)
 
     useEffect(() => {
-        fetch(`http://blogify-api-dnyo.onrender.com/post/${id}`)
+        fetch(`https://blogify-api-dnyo.onrender.com/post/${id}`)
             .then(response => {
                 if(!response.ok) { setRedirectHome(true) }
                 else return response.json()
@@ -42,7 +42,7 @@ const EditPost = () => {
         
         evt.preventDefault()
         
-        const response = await fetch(`http://blogify-api-dnyo.onrender.com/post/${id}`, {
+        const response = await fetch(`https://blogify-api-dnyo.onrender.com/post/${id}`, {
             method: 'PUT',
             body: formData,
             credentials: 'include'
