@@ -1,0 +1,28 @@
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+
+    a {
+        cursor: pointer;
+        text-decoration:none;
+        color: inherit;
+        transition: .3s all;
+
+        &:hover {
+            color: rgb(66, 65, 65)
+        }
+    }
+
+    #logo {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    .mainNav {
+        display: flex;
+        gap: 24px;
+    }
+}

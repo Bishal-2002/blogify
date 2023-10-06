@@ -1,0 +1,11 @@
+@import '../../../mixins.scss';
+
+#errorHeading404 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3.5rem;
+
+    @include xl {
+        font-size: 2rem;
+    }
+}

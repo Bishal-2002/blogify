@@ -1,0 +1,37 @@
+@import '../../../mixins.scss';
+
+.editPostForm {
+    margin: 2rem 2rem;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    input {
+        display: block;
+        margin-bottom: .5rem;
+        width: 100%;
+        padding: .5rem .5rem;
+        border: 1px solid rgb(198, 173, 173);
+        border-radius: 0px;
+        background-color: #fff;
+    }
+
+    button {
+        margin-top: 1rem;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        background-color: #555;
+        border: 0;
+        color: #fff;
+        border-radius: 5px;
+        padding: .5rem 0;
+    }
+
+    @include md {
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+}

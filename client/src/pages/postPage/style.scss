@@ -1,0 +1,57 @@
+@import "../../../mixins.scss" ;
+
+.postPageDetails {
+    padding-inline: 2.5rem;
+
+    .title {
+        font-size: 1.75rem;
+        line-height: 1.95rem;
+    }
+
+    .authorDetails {
+        margin-block: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+
+        .icons {
+            display: flex;
+            gap: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .coverImage img {
+        width: 100%;
+    }
+
+    .content {
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        margin-block: 2rem;
+        font-size: 1rem; 
+        line-height: 2rem;
+
+        li {
+            padding-block: 0.5rem;
+        }
+    }
+
+    @include md {
+        max-width: 800px;
+        margin: 0 auto;
+
+        .title {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+
+        .authorDetails {
+            margin-block: 1.5rem
+        }
+
+        .content {
+            margin-block: 2.5rem;
+            font-size: 1.25rem;
+        }
+    }
+}

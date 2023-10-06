@@ -1,0 +1,60 @@
+@import "../../../mixins.scss" ;
+
+.postSection {
+    text-decoration: none;
+    color: #333;
+
+    .postBody {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 3.5rem;
+    
+        .img img{
+            width: 100%;
+            height: 100%;
+        }
+    
+        @include md {
+            flex-direction: row;
+            gap: 3rem;
+    
+            .img img {
+                width: 25rem;
+                height: 100%;
+            }
+        }
+    
+        .postDetails {
+            .heading {
+                margin:0;
+                font-size: 2rem;
+            }
+    
+            .info {
+                margin:24px 0;
+                color: #888;
+                font-size:1rem;
+                font-weight: normal;
+                display: flex;
+                gap: 10px;
+    
+    
+                .author {
+                    color:#333;
+                }
+            }
+    
+            .summary {
+                font-weight: normal;
+                margin: 10px 0;
+                line-height: 1.8rem;
+                text-align: justify;
+            }
+    
+            @include md {
+                width: 80%;
+            }
+        }
+    }
+}
