@@ -19,7 +19,7 @@ const postRoutes = require('./routes/postRoutes')
 // Cors
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:5173'
+    origin: 'http://blogify-nine-zeta.vercel.app/'
 }))
 
 // Middleware configuration
