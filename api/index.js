@@ -37,8 +37,8 @@ async function main() {
 }
 
 // routes
-app.use('/post', postRoutes)
-app.use('/', userRoutes)
+app.use('/api/post', postRoutes)
+app.use('/api', userRoutes)
 
 
 app.listen(PORT, () => {
