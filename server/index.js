@@ -19,7 +19,7 @@ const postRoutes = require('./routes/postRoutes')
 // Cors
 app.use(cors({
     credentials: true,
-    origin: 'https://blogify-nine-zeta.vercel.app'
+    origin: 'https://blogify-bishal.vercel.app'
 }))
 
 // Middleware configuration
@@ -37,8 +37,8 @@ async function main() {
 }
 
 // routes
-app.use('/post', postRoutes)
-app.use('/', userRoutes)
+app.use('/api/post', postRoutes)
+app.use('/api', userRoutes)
 
 
 app.listen(PORT, () => {
