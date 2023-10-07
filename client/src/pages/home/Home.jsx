@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         <ContentWrapper>
-            { loading && <div><MoonLoader loading={loading} size={100} /></div> }
+            { loading && <div className='loader'><MoonLoader loading={loading} size={100} /></div> }
             { posts.map((post) => <Post key={post._id} postDoc={post}/>) }
         </ContentWrapper>
     )
