@@ -17,7 +17,7 @@ const Home = () => {
             })
     }, [])
 
-    const CSS_Override = { margin: "10rem auto" }
+    const CSS_Override = { margin: "8rem auto" }
 
     return (
         <ContentWrapper>
