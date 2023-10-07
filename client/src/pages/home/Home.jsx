@@ -17,9 +17,13 @@ const Home = () => {
             })
     }, [])
 
+    const CSS_Override = {
+        margin: "5rem auto"
+    }
+
     return (
         <ContentWrapper>
-            { loading && <div className='loader'><MoonLoader loading={loading} size={100} /></div> }
+            { loading && <div className='loader'><MoonLoader loading={loading} size={100} cssOverride={CSS_Override}/></div> }
             { posts.map((post) => <Post key={post._id} postDoc={post}/>) }
         </ContentWrapper>
     )
