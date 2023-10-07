@@ -43,8 +43,6 @@ const PostPage = () => {
 
     return (
         <div className="postPageDetails">
-            { loading && <div className='loader'><MoonLoader loading={loading} size={100} cssOverride={CSS_Override}/></div> }
-
             <>
                 <h1 className='title'>{postDoc.title}</h1>
 
