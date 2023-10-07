@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import MoonLoader from 'react-spinners'
+import MoonLoader from 'react-spinners/MoonLoader'
 
 import ContentWrapper from '../../components/contentWrapper/ContentWrapper'
 import Post from '../../components/post/Post'
