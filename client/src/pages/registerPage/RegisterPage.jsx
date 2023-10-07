@@ -10,7 +10,7 @@ const RegisterPage = () => {
 
     const register = async (evt) => {
         evt.preventDefault()
-        const response = await fetch('https://blogify-api-dnyo.onrender.com/register', {
+        const response = await fetch('https://blogify-bishal.vercel.app/api/register', {
             method: 'POST',
             body: JSON.stringify({username, password}),
             headers: {'content-Type': 'application/json'}

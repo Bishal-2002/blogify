@@ -16,7 +16,7 @@ const PostPage = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        fetch(`https://blogify-api-dnyo.onrender.com/post/${id}`)
+        fetch(`https://blogify-bishal.vercel.app/api/post/${id}`)
             .then((response) => {
                 if(!response.ok) { setRedirectHome(true) }
                 else return response.json()
@@ -27,7 +27,7 @@ const PostPage = () => {
     }, [])
 
     const DeletePost = () => {
-        fetch(`https://blogify-api-dnyo.onrender.com/post/${id}`, { method: 'DELETE' })
+        fetch(`https://blogify-bishal.vercel.app/api/post/${id}`, { method: 'DELETE' })
             .then((response) => {
                 if(response.ok)  setRedirectHome(true)
             })
