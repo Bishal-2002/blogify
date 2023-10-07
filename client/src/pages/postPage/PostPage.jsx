@@ -27,6 +27,7 @@ const PostPage = () => {
             })
             .then((postDoc) => {
                 setPostDoc(postDoc)
+                setLoading(false)
             })        
     }, [])
 
