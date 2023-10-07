@@ -40,6 +40,7 @@ const PostPage = () => {
 
     if(!userInfo)   return <Navigate to='/login'/>
     if(redirectHome)    return <Navigate to={'/'} />
+    if(!postDoc)    return ''
 
     return (
         <div className="postPageDetails">
