@@ -15,7 +15,7 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<UserContextProvider>
-				<Header />
+				{/* <Header /> */}
 				<Routes>
 					<Route path='/' element={<Home />}/>
 					<Route path='/login' element={<LoginPage />}/>
